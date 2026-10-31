@@ -1,0 +1,6 @@
+{
+  "name": "Alquiler Casa Falda del Cañete",
+  "description": "Landing page exclusiva para el alquiler de casa en Falda del Cañete, Córdoba. Naturaleza, tranquilidad, pileta y predio privado de 5.500 m².",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
