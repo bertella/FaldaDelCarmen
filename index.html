@@ -266,7 +266,7 @@
           <!-- Controles de navegación y contador del carrusel -->
           <div class="flex items-center gap-3 self-start md:self-auto">
             <span id="carouselCounter" class="px-3.5 py-1.5 rounded-full bg-[#F8F7F4] border border-[#E8E3D9] text-xs font-bold text-stone-700">
-              Foto 1 de 8
+              Foto 1 de 10
             </span>
             <div class="flex items-center gap-2">
               <button type="button" 
@@ -293,23 +293,23 @@
           <!-- Track de diapositivas -->
           <div id="carouselTrack" class="flex transition-transform duration-500 ease-out h-[360px] sm:h-[480px] lg:h-[540px]">
             
-            <!-- Slide 1: Pileta y Parque -->
+            <!-- Slide 1: Parque Verde y Vista a la Propiedad (Foto 1) -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
               <img src="/assets/aistudio/IMG-20251202-WA0006_a118f2db.jpg" 
-                   alt="Pileta propia con parque verde y lavandas" 
+                   alt="Gran parque verde con pileta y lavandas frente a la casa" 
                    class="w-full h-full object-cover" 
                    loading="eager" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
               <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
                 <div class="max-w-2xl">
                   <span class="inline-block px-2.5 py-1 rounded-md bg-[#25D366]/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-emerald-500/30">
-                    Exterior
+                    Exterior · Parque & Casa
                   </span>
                   <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Pileta & Gran Parque Verde con Lavandas
+                    Gran Parque Verde de 5.500 m² & Casa
                   </h3>
                   <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Pileta propia con parque verde, lavandas y vista a la casa
+                    Parque propio con lavandas, vegetación autóctona, pileta y vista abierta a la propiedad
                   </p>
                 </div>
                 <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
@@ -318,10 +318,42 @@
               </div>
             </div>
 
-            <!-- Slide 2: Galería Techada -->
+            <!-- Slide 2: Pileta & Solárium (Foto 2) -->
+            <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
+              <!-- Fondo difuminado ambiental para rellenar armónicamente el ancho panorámico -->
+              <img src="/assets/aistudio/IMG-20240929-WA0012_1__60ab0e7f.jpg" 
+                   alt="" 
+                   aria-hidden="true" 
+                   class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
+              
+              <!-- Imagen completa de la pileta sin cortes ni zoom excesivo -->
+              <img src="/assets/aistudio/IMG-20240929-WA0012_1__60ab0e7f.jpg" 
+                   alt="Pileta propia con agua cristalina y solárium con vista a las sierras" 
+                   class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
+                   loading="lazy" />
+              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
+                <div class="max-w-2xl pointer-events-auto">
+                  <span class="inline-block px-2.5 py-1 rounded-md bg-[#25D366]/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-emerald-500/30">
+                    Exterior · Pileta
+                  </span>
+                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
+                    Pileta & Solárium con Vista a las Sierras
+                  </h3>
+                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
+                    Vista completa: agua cristalina, solárium atérmico, lavandas en flor y sierras cordobesas
+                  </p>
+                </div>
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
+                  <i class="fa-solid fa-expand"></i> Ampliar
+                </span>
+              </div>
+            </div>
+
+            <!-- Slide 3: Galería Techada con Asador -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
               <img src="/assets/aistudio/IMG-20251223-WA0031_f0eae6f5.jpg" 
-                   alt="Fachada con galería y parque" 
+                   alt="Fachada con galería cubierta y asador" 
                    class="w-full h-full object-cover" 
                    loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
@@ -331,10 +363,10 @@
                     Exterior
                   </span>
                   <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Galería Techada
+                    Galería Techada & Asador
                   </h3>
                   <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Fachada de ladrillo visto con galería cubierta, asador y chimenea
+                    Fachada de ladrillo visto con galería cubierta, asador criollo y chimenea
                   </p>
                 </div>
                 <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
@@ -343,32 +375,39 @@
               </div>
             </div>
 
-            <!-- Slide 3: Cocina Espaciosa Equipada -->
-            <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
-              <img src="/assets/aistudio/IMG-20250523-WA0182_2d392c11.jpg" 
-                   alt="Cocina espaciosa equipada con muebles modernos" 
-                   class="w-full h-full object-cover" 
+            <!-- Slide 4: Estufa Rusa a Leña con Horno -->
+            <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
+              <!-- Fondo ambiental difuminado para formato panorámico -->
+              <img src="/assets/aistudio/IMG-20230727-WA0009_83492d9d.jpg" 
+                   alt="" 
+                   aria-hidden="true" 
+                   class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
+              
+              <!-- Imagen completa de la estufa rusa con horno sin cortes -->
+              <img src="/assets/aistudio/IMG-20230727-WA0009_83492d9d.jpg" 
+                   alt="Estufa rusa a leña de mampostería refractaria con horno integrado de alto rendimiento térmico" 
+                   class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
                    loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Interiores
+              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
+                <div class="max-w-2xl pointer-events-auto">
+                  <span class="inline-block px-2.5 py-1 rounded-md bg-amber-500/40 text-amber-200 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-amber-400/40">
+                    Calefacción & Cocina · Living
                   </span>
                   <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Cocina Espaciosa Equipada
+                    Estufa Rusa con Horno a Leña
                   </h3>
                   <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Cocina moderna espaciosa con bajomesadas y mesada de granito
+                    Estufa rusa de mampostería refractaria con horno integrado: alto rendimiento térmico para climatizar todo el hogar y cocinar a las brasas
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
                   <i class="fa-solid fa-expand"></i> Ampliar
                 </span>
               </div>
             </div>
 
-            <!-- Slide 4: Living Comedor Integrado -->
+            <!-- Slide 5: Living Comedor Integrado -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
               <img src="/assets/aistudio/IMG-20250523-WA0166_1__28cf3f7c.jpg" 
                    alt="Living y comedor integrado con sillón y mesa amplia" 
@@ -393,7 +432,64 @@
               </div>
             </div>
 
-            <!-- Slide 5: Habitación Matrimonial Amplia -->
+            <!-- Slide 6: Cocina Espaciosa Equipada -->
+            <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
+              <img src="/assets/aistudio/IMG-20250523-WA0182_2d392c11.jpg" 
+                   alt="Cocina espaciosa equipada con muebles modernos" 
+                   class="w-full h-full object-cover" 
+                   loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
+                <div class="max-w-2xl">
+                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
+                    Interiores
+                  </span>
+                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
+                    Cocina Espaciosa Equipada
+                  </h3>
+                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
+                    Cocina moderna espaciosa con bajomesadas y mesada de granito
+                  </p>
+                </div>
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
+                  <i class="fa-solid fa-expand"></i> Ampliar
+                </span>
+              </div>
+            </div>
+
+            <!-- Slide 7: Desayunador con Vista al Parque -->
+            <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
+              <!-- Fondo ambiental difuminado -->
+              <img src="/assets/aistudio/IMG-20250523-WA0178_1__3f918347.jpg" 
+                   alt="" 
+                   aria-hidden="true" 
+                   class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
+              
+              <!-- Imagen completa del desayunador -->
+              <img src="/assets/aistudio/IMG-20250523-WA0178_1__3f918347.jpg" 
+                   alt="Desayunador con vista panorámica verde" 
+                   class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
+                   loading="lazy" />
+              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
+                <div class="max-w-2xl pointer-events-auto">
+                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
+                    Interiores
+                  </span>
+                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
+                    Desayunador con Vista al Parque
+                  </h3>
+                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
+                    Mesa alta desayunadora de madera maciza frente a ventanal con vista al verde
+                  </p>
+                </div>
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
+                  <i class="fa-solid fa-expand"></i> Ampliar
+                </span>
+              </div>
+            </div>
+
+            <!-- Slide 8: Habitación Matrimonial Amplia -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
               <img src="/assets/aistudio/IMG-20250523-WA0158_2__57307c82.jpg" 
                    alt="Habitación principal matrimonial con vista exterior" 
@@ -418,57 +514,7 @@
               </div>
             </div>
 
-            <!-- Slide 6: 2 Baños Completos -->
-            <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
-              <img src="/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg" 
-                   alt="Baño completo moderno con espejo y vanitory" 
-                   class="w-full h-full object-cover" 
-                   loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Baños
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    2 Baños Completos
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Baño completo con antebaño moderno y ducha
-                  </p>
-                </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
-                </span>
-              </div>
-            </div>
-
-            <!-- Slide 7: Desayunador con Vista al Parque -->
-            <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
-              <img src="/assets/aistudio/IMG-20250523-WA0178_1__3f918347.jpg" 
-                   alt="Desayunador con vista panorámica verde" 
-                   class="w-full h-full object-cover" 
-                   loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Interiores
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Desayunador con Vista al Parque
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Mesa alta desayunadora de madera maciza frente a ventanal con vista al verde
-                  </p>
-                </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
-                </span>
-              </div>
-            </div>
-
-            <!-- Slide 8: Segunda Habitación / Home Office -->
+            <!-- Slide 9: Segunda Habitación / Home Office -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer" onclick="openCurrentSlideLightbox()">
               <img src="/assets/aistudio/IMG-20250523-WA0168_1__d2f78567.jpg" 
                    alt="Habitación secundaria con placard y escritorio" 
@@ -488,6 +534,38 @@
                   </p>
                 </div>
                 <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
+                  <i class="fa-solid fa-expand"></i> Ampliar
+                </span>
+              </div>
+            </div>
+
+            <!-- Slide 10: 2 Baños Completos -->
+            <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
+              <!-- Fondo ambiental difuminado -->
+              <img src="/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg" 
+                   alt="" 
+                   aria-hidden="true" 
+                   class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
+              
+              <!-- Imagen completa del baño -->
+              <img src="/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg" 
+                   alt="Baño completo moderno con espejo y vanitory" 
+                   class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
+                   loading="lazy" />
+              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
+                <div class="max-w-2xl pointer-events-auto">
+                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
+                    Baños
+                  </span>
+                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
+                    2 Baños Completos
+                  </h3>
+                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
+                    Baño completo con antebaño moderno y ducha
+                  </p>
+                </div>
+                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
                   <i class="fa-solid fa-expand"></i> Ampliar
                 </span>
               </div>
@@ -513,37 +591,45 @@
 
         <!-- Tira de Miniaturas (Thumbnails) Interactiva -->
         <div class="mt-4 flex items-center gap-2.5 overflow-x-auto pb-2 pt-1 scrollbar-thin" id="carouselThumbnails">
-          <!-- Miniatura 1 -->
+          <!-- Miniatura 1: Parque Verde (Foto 1) -->
           <button type="button" onclick="goToCarouselSlide(0)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-[#2D4A3E] ring-2 ring-[#2D4A3E]/30 opacity-100" data-index="0">
-            <img src="/assets/aistudio/IMG-20251202-WA0006_a118f2db.jpg" alt="Miniatura Pileta" class="w-full h-full object-cover" />
+            <img src="/assets/aistudio/IMG-20251202-WA0006_a118f2db.jpg" alt="Miniatura Parque Verde" class="w-full h-full object-cover" />
           </button>
-          <!-- Miniatura 2 -->
+          <!-- Miniatura 2: Pileta (Foto 2) -->
           <button type="button" onclick="goToCarouselSlide(1)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="1">
+            <img src="/assets/aistudio/IMG-20240929-WA0012_1__60ab0e7f.jpg" alt="Miniatura Pileta" class="w-full h-full object-cover" />
+          </button>
+          <!-- Miniatura 3: Galería -->
+          <button type="button" onclick="goToCarouselSlide(2)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="2">
             <img src="/assets/aistudio/IMG-20251223-WA0031_f0eae6f5.jpg" alt="Miniatura Galería" class="w-full h-full object-cover" />
           </button>
-          <!-- Miniatura 3 -->
-          <button type="button" onclick="goToCarouselSlide(2)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="2">
-            <img src="/assets/aistudio/IMG-20250523-WA0182_2d392c11.jpg" alt="Miniatura Cocina" class="w-full h-full object-cover" />
-          </button>
-          <!-- Miniatura 4 -->
+          <!-- Miniatura 4: Estufa Rusa con Horno -->
           <button type="button" onclick="goToCarouselSlide(3)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="3">
+            <img src="/assets/aistudio/IMG-20230727-WA0009_83492d9d.jpg" alt="Miniatura Estufa Rusa con Horno" class="w-full h-full object-cover object-center" />
+          </button>
+          <!-- Miniatura 5: Living -->
+          <button type="button" onclick="goToCarouselSlide(4)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="4">
             <img src="/assets/aistudio/IMG-20250523-WA0166_1__28cf3f7c.jpg" alt="Miniatura Living" class="w-full h-full object-cover" />
           </button>
-          <!-- Miniatura 5 -->
-          <button type="button" onclick="goToCarouselSlide(4)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="4">
-            <img src="/assets/aistudio/IMG-20250523-WA0158_2__57307c82.jpg" alt="Miniatura Habitación Principal" class="w-full h-full object-cover" />
-          </button>
-          <!-- Miniatura 6 -->
+          <!-- Miniatura 6: Cocina -->
           <button type="button" onclick="goToCarouselSlide(5)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="5">
-            <img src="/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg" alt="Miniatura Baño" class="w-full h-full object-cover" />
+            <img src="/assets/aistudio/IMG-20250523-WA0182_2d392c11.jpg" alt="Miniatura Cocina" class="w-full h-full object-cover" />
           </button>
-          <!-- Miniatura 7 -->
+          <!-- Miniatura 7: Desayunador -->
           <button type="button" onclick="goToCarouselSlide(6)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="6">
             <img src="/assets/aistudio/IMG-20250523-WA0178_1__3f918347.jpg" alt="Miniatura Desayunador" class="w-full h-full object-cover" />
           </button>
-          <!-- Miniatura 8 -->
+          <!-- Miniatura 8: Habitación Principal -->
           <button type="button" onclick="goToCarouselSlide(7)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="7">
+            <img src="/assets/aistudio/IMG-20250523-WA0158_2__57307c82.jpg" alt="Miniatura Habitación Principal" class="w-full h-full object-cover" />
+          </button>
+          <!-- Miniatura 9: Segunda Habitación -->
+          <button type="button" onclick="goToCarouselSlide(8)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="8">
             <img src="/assets/aistudio/IMG-20250523-WA0168_1__d2f78567.jpg" alt="Miniatura Segunda Habitación" class="w-full h-full object-cover" />
+          </button>
+          <!-- Miniatura 10: Baño -->
+          <button type="button" onclick="goToCarouselSlide(9)" class="thumb-btn w-20 h-14 sm:w-24 sm:h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all border-transparent opacity-60 hover:opacity-100" data-index="9">
+            <img src="/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg" alt="Miniatura Baño" class="w-full h-full object-cover" />
           </button>
         </div>
 
@@ -714,9 +800,9 @@
             <div class="w-12 h-12 rounded-xl bg-[#2D4A3E] text-white flex items-center justify-center text-xl mb-4">
               <i class="fa-solid fa-couch"></i>
             </div>
-            <h3 class="text-lg font-bold text-stone-900 mb-2">Living / Comedor Integrado</h3>
+            <h3 class="text-lg font-bold text-stone-900 mb-2">Living / Comedor con Estufa Rusa y Horno</h3>
             <p class="text-sm text-stone-600 leading-relaxed">
-              Salón principal con chimenea / estufa a leña para el invierno, comedor cómodo y salida directa hacia la galería exterior.
+              Salón principal con estufa rusa de mampostería refractaria a leña con horno integrado (alto rendimiento térmico para climatizar todo el hogar en invierno y cocinar a las brasas), comedor cómodo y salida directa a la galería.
             </p>
           </div>
 
@@ -1552,35 +1638,43 @@
     const carouselSlidesData = [
       {
         src: "/assets/aistudio/IMG-20251202-WA0006_a118f2db.jpg",
-        caption: "Pileta propia con parque verde, lavandas y vista a la casa"
+        caption: "Gran parque verde de 5.500 m² con pileta, lavandas y vista abierta a la propiedad"
+      },
+      {
+        src: "/assets/aistudio/IMG-20240929-WA0012_1__60ab0e7f.jpg",
+        caption: "Pileta propia con agua cristalina, solárium atérmico, lavandas y vista a las sierras"
       },
       {
         src: "/assets/aistudio/IMG-20251223-WA0031_f0eae6f5.jpg",
-        caption: "Fachada de ladrillo visto con galería cubierta, asador y chimenea"
+        caption: "Fachada de ladrillo visto con galería cubierta, asador criollo y chimenea"
       },
       {
-        src: "/assets/aistudio/IMG-20250523-WA0182_2d392c11.jpg",
-        caption: "Cocina moderna espaciosa con bajomesadas y mesada de granito"
+        src: "/assets/aistudio/IMG-20230727-WA0009_83492d9d.jpg",
+        caption: "Estufa rusa de mampostería refractaria con horno a leña integrado: alto rendimiento térmico y cocción"
       },
       {
         src: "/assets/aistudio/IMG-20250523-WA0166_1__28cf3f7c.jpg",
         caption: "Living comedor espacioso con gran iluminación y pisos símil madera"
       },
       {
-        src: "/assets/aistudio/IMG-20250523-WA0158_2__57307c82.jpg",
-        caption: "Dormitorio principal amplio, luminoso y con cortinas blackout"
-      },
-      {
-        src: "/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg",
-        caption: "Baño completo con antebaño moderno y ducha"
+        src: "/assets/aistudio/IMG-20250523-WA0182_2d392c11.jpg",
+        caption: "Cocina moderna espaciosa con bajomesadas y mesada de granito"
       },
       {
         src: "/assets/aistudio/IMG-20250523-WA0178_1__3f918347.jpg",
         caption: "Mesa alta desayunadora de madera maciza frente a ventanal con vista al verde"
       },
       {
+        src: "/assets/aistudio/IMG-20250523-WA0158_2__57307c82.jpg",
+        caption: "Dormitorio principal amplio, luminoso y con cortinas blackout"
+      },
+      {
         src: "/assets/aistudio/IMG-20250523-WA0168_1__d2f78567.jpg",
         caption: "Segunda habitación con placard, cuchetas y espacio de estudio"
+      },
+      {
+        src: "/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg",
+        caption: "Baño completo con antebaño moderno y ducha"
       }
     ];
 
