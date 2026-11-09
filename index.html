@@ -6,12 +6,12 @@
   <title>Alquiler de Casa en Falda del Cañete: Naturaleza, Confort y Seguridad | Córdoba</title>
   <meta name="description" content="Viví rodeado de sierras y tranquilidad a solo 15 minutos de Carlos Paz y 25 de Córdoba Capital. Casa en alquiler permanente en loteo privado de 5.500 m² con pileta." />
   <meta property="og:title" content="Alquiler de Casa en Falda del Cañete - Naturaleza y Tranquilidad" />
-  <meta property="og:description" content="Propiedad exclusiva en alquiler permanente en Falda del Cañete, Córdoba. 2 dormitorios, 2 baños, pileta, parque de 5.500 m² y cuidador 24 hs." />
+  <meta property="og:description" content="Propiedad exclusiva en alquiler permanente en Falda del Cañete, Córdoba. 2 dormitorios, 2 baños, pileta, parque de 5.500 m² en un loteo cerrado." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/assets/aistudio/IMG-20251202-WA0006_a118f2db.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Alquiler de Casa en Falda del Cañete, Córdoba" />
-  <meta name="twitter:description" content="Viví en las sierras cordobesas a 15 min de Carlos Paz y 25 de Córdoba Capital. Pileta, parque y seguridad 24 hs." />
+  <meta name="twitter:description" content="Viví en las sierras cordobesas a 15 min de Carlos Paz y 25 de Córdoba Capital. Pileta, parque de 5.500 m² y perímetro cerrado." />
   <meta name="twitter:image" content="/assets/aistudio/IMG-20251202-WA0006_a118f2db.jpg" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232D4A3E'><path d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z'/></svg>" />
 
@@ -75,7 +75,7 @@
     "@context": "https://schema.org",
     "@type": "SingleFamilyResidence",
     "name": "Casa en Alquiler Permanente en Falda del Cañete",
-    "description": "Exclusiva casa de 2 habitaciones, 2 baños, pileta propia y parque de 5.500 m² con seguridad 24 hs en Falda del Cañete, Córdoba.",
+    "description": "Exclusiva casa de 2 habitaciones, 2 baños, pileta propia y parque de 5.500 m² con cuidador a cargo del parque en Falda del Cañete, Córdoba.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Falda del Cañete",
@@ -94,7 +94,7 @@
       { "@type": "LocationFeatureSpecification", "name": "Pileta Propia", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Parque de 5.500 m²", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Cochera Cubierta", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Cuidador 24 Horas", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Cuidador del Parque", "value": true },
       { "@type": "LocationFeatureSpecification", "name": "Pet Friendly", "value": true }
     ]
   }
@@ -122,23 +122,23 @@
       </a>
 
       <!-- Zona 2: Enlaces de navegación desktop -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-600">
+      <nav class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-semibold text-stone-600">
         <a href="#galeria" class="hover:text-[#1B4332] transition-colors whitespace-nowrap">Galería</a>
         <a href="#ubicacion" class="hover:text-[#1B4332] transition-colors whitespace-nowrap">Ubicación</a>
         <a href="#comodidades" class="hover:text-[#1B4332] transition-colors whitespace-nowrap">Comodidades</a>
-        <a href="#seguridad" class="hover:text-[#1B4332] transition-colors whitespace-nowrap">Seguridad</a>
-        <a href="#faq" class="hover:text-[#1B4332] transition-colors whitespace-nowrap">Preguntas</a>
+        <a href="#seguridad" class="hover:text-[#1B4332] transition-colors whitespace-nowrap">Predio</a>
+        <a href="#requisitos" class="hover:text-[#1B4332] transition-colors whitespace-nowrap text-[#1B4332] font-bold">Requisitos</a>
+        <a href="#faq" class="hover:text-[#1B4332] transition-colors whitespace-nowrap">¿Es para mí?</a>
       </nav>
 
-      <!-- Zona 3: CTA Principal WhatsApp & Botón Móvil -->
+      <!-- Zona 3: CTA Principal Agenda tu Visita & Botón Móvil -->
       <div class="flex items-center gap-3 shrink-0">
-        <a href="https://wa.me/5493510000000?text=Hola!%20Me%20interesa%20consultar%20por%20el%20alquiler%20permanente%20de%20la%20casa%20en%20Falda%20del%20Cañete." 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-[#1B4332] hover:bg-[#2D4A3E] shadow-sm hover:shadow-md transition-all whitespace-nowrap">
+        <button type="button" 
+                onclick="openAgendaVisitaModal()" 
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-[#1B4332] hover:bg-[#2D4A3E] shadow-sm hover:shadow-md transition-all whitespace-nowrap cursor-pointer">
           <i class="fa-brands fa-whatsapp text-base text-[#25D366]"></i>
-          <span>Contactar por WhatsApp</span>
-        </a>
+          <span>Agenda tu visita</span>
+        </button>
 
         <!-- Botón menú hamburguesa móvil -->
         <button id="mobileMenuBtn" type="button" aria-label="Abrir menú" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-200/60 focus:outline-none">
@@ -159,19 +159,21 @@
         <i class="fa-solid fa-house-chimney w-6 text-stone-400"></i> Comodidades
       </a>
       <a href="#seguridad" class="mobile-nav-link block py-2 px-3 rounded-lg text-stone-700 font-medium hover:bg-stone-200/50 hover:text-[#1B4332]">
-        <i class="fa-solid fa-shield-halved w-6 text-stone-400"></i> Seguridad & Predio
+        <i class="fa-solid fa-tree w-6 text-stone-400"></i> Predio & Naturaleza
+      </a>
+      <a href="#requisitos" class="mobile-nav-link block py-2 px-3 rounded-lg text-stone-700 font-medium hover:bg-stone-200/50 hover:text-[#1B4332]">
+        <i class="fa-solid fa-file-circle-check w-6 text-stone-400"></i> Requisitos para Alquilar
       </a>
       <a href="#faq" class="mobile-nav-link block py-2 px-3 rounded-lg text-stone-700 font-medium hover:bg-stone-200/50 hover:text-[#1B4332]">
-        <i class="fa-regular fa-circle-question w-6 text-stone-400"></i> Preguntas Frecuentes
+        <i class="fa-solid fa-circle-question w-6 text-stone-400"></i> ¿Este lugar es para mí?
       </a>
       <div class="pt-2 border-t border-stone-200">
-        <a href="https://wa.me/5493510000000?text=Hola!%20Me%20interesa%20consultar%20por%20el%20alquiler%20permanente%20de%20la%20casa%20en%20Falda%20del%20Cañete." 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow text-sm">
+        <button type="button" 
+                onclick="openAgendaVisitaModal()" 
+                class="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow text-sm cursor-pointer">
           <i class="fa-brands fa-whatsapp text-lg"></i>
-          <span>Enviar mensaje por WhatsApp</span>
-        </a>
+          <span>Agenda tu visita</span>
+        </button>
       </div>
     </div>
   </header>
@@ -200,56 +202,6 @@
             <p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl">
               Viví rodeado de sierras y tranquilidad a solo <strong class="text-stone-800 font-semibold">15 minutos de Carlos Paz</strong> y <strong class="text-stone-800 font-semibold">25 de Córdoba Capital</strong>. Una propiedad exclusiva dentro de un entorno natural único sobre Ruta C45.
             </p>
-
-            <!-- Botones de Acción (CTAs) -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-              <a href="https://wa.me/5493510000000?text=Hola!%20Quisiera%20consultar%20disponibilidad%20y%20requisitos%20para%20el%20alquiler%20permanente%20en%20Falda%20del%20Cañete."
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 class="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl text-base font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
-                <i class="fa-brands fa-whatsapp text-xl"></i>
-                <span>Consultar Disponibilidad (WhatsApp)</span>
-              </a>
-
-              <a href="#ubicacion" 
-                 class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-[#1B4332] bg-white hover:bg-stone-100 border border-[#E8E3D9] shadow-sm transition-all">
-                <i class="fa-solid fa-compass text-stone-500"></i>
-                <span>Ver Ubicación</span>
-              </a>
-            </div>
-
-            <!-- 3 Badges de Beneficio Rápido en el Hero -->
-            <div class="pt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white/80 border border-[#E8E3D9] shadow-sm">
-                <div class="w-10 h-10 rounded-lg bg-[#2D4A3E]/10 text-[#2D4A3E] flex items-center justify-center shrink-0">
-                  <i class="fa-solid fa-car-side"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-stone-500">Ubicación estratégica</div>
-                  <div class="text-sm font-bold text-stone-800">15 min de Carlos Paz</div>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white/80 border border-[#E8E3D9] shadow-sm">
-                <div class="w-10 h-10 rounded-lg bg-[#2D4A3E]/10 text-[#2D4A3E] flex items-center justify-center shrink-0">
-                  <i class="fa-solid fa-city"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-stone-500">Fácil conectividad</div>
-                  <div class="text-sm font-bold text-stone-800">25 min de Córdoba</div>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white/80 border border-[#E8E3D9] shadow-sm">
-                <div class="w-10 h-10 rounded-lg bg-[#2D4A3E]/10 text-[#2D4A3E] flex items-center justify-center shrink-0">
-                  <i class="fa-solid fa-vector-square"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-stone-500">Espacio & Privacidad</div>
-                  <div class="text-sm font-bold text-stone-800">Lote de 5.500 m²</div>
-                </div>
-              </div>
-            </div>
 
           </div>
 
@@ -285,8 +237,8 @@
 
             <!-- Detalle decorativo flotante superior -->
             <div class="hidden sm:flex absolute -top-4 -right-4 items-center gap-2 bg-white px-4 py-2.5 rounded-2xl shadow-md border border-[#E8E3D9]">
-              <i class="fa-solid fa-shield-heart text-[#2D6A4F]"></i>
-              <span class="text-xs font-bold text-stone-800">Cuidador 24 hs en el predio</span>
+              <i class="fa-solid fa-tree text-[#2D6A4F]"></i>
+              <span class="text-xs font-bold text-stone-800">Cuidador a cargo del parque</span>
             </div>
           </div>
 
@@ -595,9 +547,42 @@
           </button>
         </div>
 
+        <!-- 3 Badges de Beneficio Clave debajo del Carrusel -->
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="flex items-center gap-3.5 p-4 rounded-2xl bg-[#F8F7F4] border border-[#E8E3D9] shadow-sm">
+            <div class="w-11 h-11 rounded-xl bg-[#2D4A3E]/10 text-[#2D4A3E] flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+            <div>
+              <div class="text-xs text-stone-500 font-medium">Ubicación estratégica</div>
+              <div class="text-sm sm:text-base font-bold text-stone-900">15 min de Carlos Paz</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 p-4 rounded-2xl bg-[#F8F7F4] border border-[#E8E3D9] shadow-sm">
+            <div class="w-11 h-11 rounded-xl bg-[#2D4A3E]/10 text-[#2D4A3E] flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div>
+              <div class="text-xs text-stone-500 font-medium">Fácil conectividad</div>
+              <div class="text-sm sm:text-base font-bold text-stone-900">25 min de Córdoba</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3.5 p-4 rounded-2xl bg-[#F8F7F4] border border-[#E8E3D9] shadow-sm">
+            <div class="w-11 h-11 rounded-xl bg-[#2D4A3E]/10 text-[#2D4A3E] flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-vector-square"></i>
+            </div>
+            <div>
+              <div class="text-xs text-stone-500 font-medium">Espacio & Privacidad</div>
+              <div class="text-sm sm:text-base font-bold text-stone-900">Lote de 5.500 m²</div>
+            </div>
+          </div>
+        </div>
+
         <!-- Botón para ver más en WhatsApp o abrir lightbox -->
         <div class="mt-8 text-center">
-          <a href="https://wa.me/5493510000000?text=Hola!%20Me%20gustar%C3%ADa%20ver%20m%C3%A1s%20fotos%20y%20videos%20de%20la%20casa%20en%20Falda%20del%20Ca%C3%B1ete." 
+          <a href="https://wa.me/5493512042270?text=Hola!%20Me%20gustar%C3%ADa%20ver%20m%C3%A1s%20fotos%20y%20videos%20de%20la%20casa%20en%20Falda%20del%20Ca%C3%B1ete." 
              target="_blank" 
              rel="noopener noreferrer" 
              class="inline-flex items-center gap-2 text-sm font-semibold text-[#1B4332] hover:text-[#2D6A4F] underline underline-offset-4 decoration-stone-300">
@@ -637,7 +622,7 @@
                 Falda del Cañete, Valle de Paravachasca / Sierras Chicas
               </h3>
               <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
-                Ubicada en una de las zonas de mayor crecimiento y plusvalía de Córdoba. Combina la desconexión total del ruido urbano con la comodidad de estar a menos de media hora de universidades, centros médicos y el aeropuerto.
+                Ubicada en una de las zonas de mayor crecimiento y plusvalía de Córdoba. Combina la desconexión total del ruido urbano con la cercanía a Carlos Paz y Córdoba Capital, contando además con <strong>parada de colectivo a solo 400 metros</strong> sobre la ruta.
               </p>
               
               <div class="pt-2 flex flex-wrap gap-4">
@@ -797,12 +782,12 @@
             
             <div class="p-8 sm:p-12 lg:p-16 lg:col-span-7 space-y-6">
               <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-emerald-300 text-xs font-semibold tracking-wider uppercase">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span>Tranquilidad Garantizada</span>
+                <i class="fa-solid fa-tree"></i>
+                <span>Tranquilidad & Exclusividad</span>
               </div>
 
               <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight text-white">
-                Tranquilidad y Exclusividad las 24 Horas
+                Tranquilidad, Naturaleza y Predio Exclusivo
               </h2>
 
               <p class="text-stone-300 text-base sm:text-lg leading-relaxed">
@@ -815,8 +800,8 @@
                     <i class="fa-solid fa-check text-xs"></i>
                   </div>
                   <div>
-                    <h3 class="font-bold text-white text-base">Cuidador permanente las 24 horas</h3>
-                    <p class="text-sm text-stone-300">Presencia continua en el predio para supervisión, custodia y mantenimiento preventivo.</p>
+                    <h3 class="font-bold text-white text-base">Cuidador a cargo del parque general</h3>
+                    <p class="text-sm text-stone-300">En la propiedad hay un cuidador que se encarga del cuidado y mantenimiento general del amplio parque.</p>
                   </div>
                 </div>
 
@@ -825,19 +810,19 @@
                     <i class="fa-solid fa-check text-xs"></i>
                   </div>
                   <div>
-                    <h3 class="font-bold text-white text-base">Perímetro cerrado </h3>
-                    <p class="text-sm text-stone-300">Ingreso exclusivo para residentes con portón de seguridad y perímetro resguardado.</p>
+                    <h3 class="font-bold text-white text-base">Perímetro cerrado</h3>
+                    <p class="text-sm text-stone-300">Ingreso exclusivo para residentes con portón de acceso y perímetro resguardado.</p>
                   </div>
                 </div>
               </div>
 
               <div class="pt-4">
-                <a href="https://wa.me/5493510000000?text=Hola!%20Quisiera%20m%C3%A1s%20detalles%20sobre%20la%20seguridad%20y%20el%20predio%20en%20Falda%20del%20Ca%C3%B1ete." 
+                <a href="https://wa.me/5493512042270?text=Hola!%20Quisiera%20m%C3%A1s%20detalles%20sobre%20el%20predio%20en%20Falda%20del%20Ca%C3%B1ete." 
                    target="_blank" 
                    rel="noopener noreferrer"
                    class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-sm shadow-md transition-all">
                   <i class="fa-brands fa-whatsapp text-lg"></i>
-                  <span>Consultar por Seguridad & Visitas</span>
+                  <span>Consultar por el Predio & Visitas</span>
                 </a>
               </div>
             </div>
@@ -925,111 +910,356 @@
       </div>
     </section>
 
-    <!-- ==================== 8. SECCIÓN FAQ (PREGUNTAS FRECUENTES) ==================== -->
-    <section id="faq" class="py-16 lg:py-24 bg-[#F8F7F4]">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- ==================== SECCIÓN REQUISITOS PARA ALQUILAR ==================== -->
+    <section id="requisitos" class="py-16 lg:py-24 bg-white border-y border-[#E8E3D9]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-12">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8E3D9] text-[#1B4332] text-xs font-bold uppercase tracking-wider mb-3">
-            <i class="fa-regular fa-circle-question"></i>
-            <span>Dudas Habituales</span>
+        <!-- Encabezado de sección -->
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E8E3D9] text-[#1B4332] text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-file-signature text-[#2D6A4F]"></i>
+            <span>Trámite Claro y Seguro</span>
           </div>
           <h2 class="text-2xl sm:text-4xl font-extrabold text-[#1B4332] tracking-tight">
-            Preguntas Frecuentes
+            REQUISITOS PARA ALQUILAR
           </h2>
-          <p class="text-stone-600 mt-2 text-sm sm:text-base">
-            Respuestas claras a las consultas más frecuentes sobre la propiedad y el contrato de alquiler.
+          <p class="text-stone-600 mt-3 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+            Para iniciar el proceso de alquiler, es necesario presentar la siguiente documentación:
           </p>
         </div>
 
-        <!-- Acordeón interactivo con JavaScript puro -->
-        <div class="space-y-4" id="faqAccordion">
+        <!-- Grid de los 4 bloques de requisitos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           
-          <!-- Item 1 -->
-          <div class="faq-item rounded-2xl bg-white border border-[#E8E3D9] overflow-hidden transition-all shadow-sm">
-            <button type="button" 
-                    class="faq-toggle w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-stone-900 hover:text-[#1B4332] focus:outline-none"
-                    aria-expanded="false">
-              <span class="text-base sm:text-lg">1. ¿Dónde está ubicada exactamente la propiedad?</span>
-              <span class="faq-icon w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 transition-transform duration-300 shrink-0">
-                <i class="fa-solid fa-chevron-down text-xs"></i>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-max-height bg-stone-50/50">
-              <div class="p-5 sm:p-6 pt-0 text-stone-600 text-sm sm:text-base leading-relaxed border-t border-stone-100">
-                La propiedad está ubicada en <strong>Falda del Cañete</strong>, provincia de Córdoba, con acceso directo y pavimentado por la <strong>Ruta Provincial C45</strong>, a pocos metros del predio científico de la <strong>CONAE</strong> (Centro Espacial Teófilo Tabanera). Es un entorno campestre sumamente seguro, tranquilo y con vistas despejadas a las sierras.
+          <!-- Bloque 1: Documentación del inquilino -->
+          <div class="bg-[#F8F7F4] rounded-2xl p-6 sm:p-8 border border-[#E8E3D9] hover:border-[#3D5A4C]/40 transition-all shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 mb-5 pb-4 border-b border-stone-200">
+                <div class="w-11 h-11 rounded-xl bg-[#1B4332] text-white flex items-center justify-center text-lg shrink-0 shadow-sm">
+                  <i class="fa-solid fa-id-card"></i>
+                </div>
+                <div>
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#2D6A4F]">Paso 01</span>
+                  <h3 class="text-lg sm:text-xl font-bold text-stone-900 leading-tight">1. Documentación del inquilino</h3>
+                </div>
               </div>
+              
+              <ul class="space-y-3.5 text-stone-700 text-sm sm:text-base">
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>DNI frente y dorso.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Últimos 3 recibos de sueldo o comprobantes de ingresos.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Antigüedad laboral comprobable.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>En caso de trabajadores independientes: constancia de inscripción en ARCA y documentación que acredite ingresos.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-6 pt-3 border-t border-stone-200/60 text-xs font-medium text-stone-500">
+              Titular del contrato de locación
             </div>
           </div>
 
-          <!-- Item 2 -->
-          <div class="faq-item rounded-2xl bg-white border border-[#E8E3D9] overflow-hidden transition-all shadow-sm">
-            <button type="button" 
-                    class="faq-toggle w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-stone-900 hover:text-[#1B4332] focus:outline-none"
-                    aria-expanded="false">
-              <span class="text-base sm:text-lg">2. ¿A qué distancia está de Carlos Paz y Córdoba Capital?</span>
-              <span class="faq-icon w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 transition-transform duration-300 shrink-0">
-                <i class="fa-solid fa-chevron-down text-xs"></i>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-max-height bg-stone-50/50">
-              <div class="p-5 sm:p-6 pt-0 text-stone-600 text-sm sm:text-base leading-relaxed border-t border-stone-100">
-                Se encuentra a aproximadamente <strong>15 minutos de Villa Carlos Paz</strong> por ruta ágil, y a solo <strong>25 minutos de Córdoba Capital</strong> conectando de forma directa por la variante C45 hacia la autopista Córdoba-Carlos Paz o hacia el sur provincial.
+          <!-- Bloque 2: Garantías laborales -->
+          <div class="bg-[#F8F7F4] rounded-2xl p-6 sm:p-8 border border-[#E8E3D9] hover:border-[#3D5A4C]/40 transition-all shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 mb-5 pb-4 border-b border-stone-200">
+                <div class="w-11 h-11 rounded-xl bg-[#1B4332] text-white flex items-center justify-center text-lg shrink-0 shadow-sm">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#2D6A4F]">Paso 02</span>
+                  <h3 class="text-lg sm:text-xl font-bold text-stone-900 leading-tight">2. Garantías laborales</h3>
+                </div>
               </div>
+              
+              <ul class="space-y-3.5 text-stone-700 text-sm sm:text-base">
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Presentar garantes con recibos de sueldo.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Últimos 3 recibos de sueldo de cada garante.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>DNI frente y dorso.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Antigüedad laboral comprobable.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Ingresos suficientes para respaldar la obligación contractual.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-6 pt-3 border-t border-stone-200/60 text-xs font-medium text-stone-500">
+              Respaldo mediante fianza laboral
             </div>
           </div>
 
-          <!-- Item 3 -->
-          <div class="faq-item rounded-2xl bg-white border border-[#E8E3D9] overflow-hidden transition-all shadow-sm">
-            <button type="button" 
-                    class="faq-toggle w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-stone-900 hover:text-[#1B4332] focus:outline-none"
-                    aria-expanded="false">
-              <span class="text-base sm:text-lg">3. ¿Se aceptan mascotas?</span>
-              <span class="faq-icon w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 transition-transform duration-300 shrink-0">
-                <i class="fa-solid fa-chevron-down text-xs"></i>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-max-height bg-stone-50/50">
-              <div class="p-5 sm:p-6 pt-0 text-stone-600 text-sm sm:text-base leading-relaxed border-t border-stone-100">
-                <strong>Sí, la propiedad es Pet Friendly</strong>. El extenso parque verde de 5.500 m² es ideal para que las mascotas disfruten libremente, solicitando tenencia responsable y cuidado de los ambientes interiores.
+          <!-- Bloque 3: Garantía propietaria -->
+          <div class="bg-[#F8F7F4] rounded-2xl p-6 sm:p-8 border border-[#E8E3D9] hover:border-[#3D5A4C]/40 transition-all shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 mb-5 pb-4 border-b border-stone-200">
+                <div class="w-11 h-11 rounded-xl bg-[#1B4332] text-white flex items-center justify-center text-lg shrink-0 shadow-sm">
+                  <i class="fa-solid fa-house-circle-check"></i>
+                </div>
+                <div>
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#2D6A4F]">Paso 03</span>
+                  <h3 class="text-lg sm:text-xl font-bold text-stone-900 leading-tight">3. Garantía propietaria</h3>
+                </div>
               </div>
+              
+              <ul class="space-y-3.5 text-stone-700 text-sm sm:text-base">
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Escritura del inmueble ofrecido como garantía.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>DNI de los titulares.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>El inmueble deberá estar ubicado en la provincia de Córdoba.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Se solicitarán los informes registrales correspondientes para verificar su situación jurídica.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-6 pt-3 border-t border-stone-200/60 text-xs font-medium text-stone-500">
+              Inmuebles en la provincia de Córdoba
             </div>
           </div>
 
-          <!-- Item 4 -->
-          <div class="faq-item rounded-2xl bg-white border border-[#E8E3D9] overflow-hidden transition-all shadow-sm">
-            <button type="button" 
-                    class="faq-toggle w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-stone-900 hover:text-[#1B4332] focus:outline-none"
-                    aria-expanded="false">
-              <span class="text-base sm:text-lg">4. ¿Cuáles son las comodidades exteriores y de seguridad?</span>
-              <span class="faq-icon w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 transition-transform duration-300 shrink-0">
-                <i class="fa-solid fa-chevron-down text-xs"></i>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-max-height bg-stone-50/50">
-              <div class="p-5 sm:p-6 pt-0 text-stone-600 text-sm sm:text-base leading-relaxed border-t border-stone-100">
-                Cuenta con <strong>pileta propia</strong> de uso exclusivo, un predio parquizado de <strong>5.500 m²</strong>, galería cubierta con asador criollo, cochera cubierta y la tranquilidad inigualable de tener <strong>cuidador permanente las 24 horas</strong> en el predio.
+          <!-- Bloque 4: Consideraciones generales -->
+          <div class="bg-[#F8F7F4] rounded-2xl p-6 sm:p-8 border border-[#E8E3D9] hover:border-[#3D5A4C]/40 transition-all shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3.5 mb-5 pb-4 border-b border-stone-200">
+                <div class="w-11 h-11 rounded-xl bg-[#1B4332] text-white flex items-center justify-center text-lg shrink-0 shadow-sm">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div>
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#2D6A4F]">Información Clave</span>
+                  <h3 class="text-lg sm:text-xl font-bold text-stone-900 leading-tight">4. Consideraciones generales</h3>
+                </div>
               </div>
+              
+              <ul class="space-y-3.5 text-stone-700 text-sm sm:text-base">
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>La documentación presentada estará sujeta a evaluación y aprobación.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Los ingresos deberán ser demostrables y suficientes para afrontar las obligaciones del contrato.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Las garantías deberán acreditar solvencia y capacidad de respaldo durante la relación contractual.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-6 pt-3 border-t border-stone-200/60 text-xs font-medium text-stone-500">
+              Evaluación y aprobación personalizada
             </div>
           </div>
 
-          <!-- Item 5 -->
-          <div class="faq-item rounded-2xl bg-white border border-[#E8E3D9] overflow-hidden transition-all shadow-sm">
-            <button type="button" 
-                    class="faq-toggle w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-bold text-stone-900 hover:text-[#1B4332] focus:outline-none"
-                    aria-expanded="false">
-              <span class="text-base sm:text-lg">5. ¿Cuáles son las condiciones y tipo de contrato?</span>
-              <span class="faq-icon w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 transition-transform duration-300 shrink-0">
-                <i class="fa-solid fa-chevron-down text-xs"></i>
-              </span>
-            </button>
-            <div class="faq-content max-h-0 overflow-hidden transition-max-height bg-stone-50/50">
-              <div class="p-5 sm:p-6 pt-0 text-stone-600 text-sm sm:text-base leading-relaxed border-t border-stone-100">
-                Se trata de un <strong>contrato de alquiler permanente tradicional</strong>. Se solicitan los requisitos habituales de acreditación de ingresos del locatario y garantías (recibos de sueldo o garantía propietaria a satisfacción). Para conocer el canon locativo vigente y coordinar una visita, podés comunicarte directamente vía WhatsApp.
+        </div>
+
+        <!-- Banner / CTA de Asesoramiento de Requisitos -->
+        <div class="mt-10 sm:mt-12 rounded-2xl bg-[#1B4332] text-white p-6 sm:p-8 md:p-10 shadow-lg relative overflow-hidden">
+          <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-[#25D366]/10 blur-2xl pointer-events-none"></div>
+          
+          <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="max-w-2xl space-y-2">
+              <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                <i class="fa-solid fa-comments"></i>
+                <span>Asesoramiento Personalizado</span>
               </div>
+              <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
+                ¿Tenés dudas sobre los requisitos?
+              </h3>
+              <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+                Contactanos y te asesoramos para que puedas preparar tu documentación antes de iniciar el trámite.
+              </p>
+            </div>
+
+            <div class="shrink-0">
+              <a href="https://wa.me/5493512042270?text=Hola!%20Tengo%20dudas%20sobre%20los%20requisitos%20para%20alquilar%20la%20casa%20en%20Falda%20del%20Cañete."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl text-sm sm:text-base font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Consultar Requisitos por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 8. SECCIÓN ¿ESTE LUGAR ES PARA MÍ? ==================== -->
+    <section id="faq" class="py-16 lg:py-24 bg-[#F8F7F4]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Encabezado de Sección -->
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E8E3D9] text-[#1B4332] text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-circle-check text-[#2D6A4F]"></i>
+            <span>Transparencia y Convivencia</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1B4332] tracking-tight">
+            ¿Este lugar es para mí?
+          </h2>
+          <p class="text-stone-600 mt-3 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            Queremos que tomes una decisión clara y acertada. Revisá los puntos clave de la zona, los servicios disponibles y las pautas de alquiler para confirmar si esta casa se adapta a tu estilo de vida:
+          </p>
+        </div>
+
+        <!-- 3 Bloques visuales claros -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+          
+          <!-- Bloque 1: 📍 Lo que tenés que saber de la zona -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E3D9] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 pb-4 border-b border-stone-100">
+                <span class="text-2xl" role="img" aria-label="Ubicación">📍</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900 leading-tight">
+                  Lo que tenés que saber de la zona
+                </h3>
+              </div>
+              
+              <ul class="space-y-3.5 text-stone-700 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-car-side text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Parada de colectivo a <strong>solo 400 metros</strong> sobre la ruta. Se recomienda <strong>vehículo propio</strong> para máxima comodidad en traslados diarios.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-location-dot text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span>Ubicada sobre <strong>Ruta Provincial C45 (km 11)</strong>, en cercanías del predio de la <strong>CONAE</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-mountain-sun text-[#2D6A4F] mt-1 shrink-0 text-sm"></i>
+                  <span><strong>Entorno sereno y natural</strong>: aire puro, tranquilidad absoluta y vistas abiertas a las sierras cordobesas.</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-6 pt-3 border-t border-stone-100 text-xs font-semibold text-stone-500">
+              Conectividad sobre ruta pavimentada
             </div>
           </div>
 
+          <!-- Bloque 2: 🛠️ Servicios e infraestructura -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E3D9] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 pb-4 border-b border-stone-100">
+                <span class="text-2xl" role="img" aria-label="Herramientas">🛠️</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900 leading-tight">
+                  Servicios e infraestructura
+                </h3>
+              </div>
+              
+              <ul class="space-y-3.5 text-stone-700 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-wifi text-amber-600 mt-1 shrink-0 text-sm"></i>
+                  <span><strong>Sin Wi-Fi incluido</strong>: la contratación e instalación del proveedor corre por cuenta del inquilino (disponible internet satelital o por aire).</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-fire-flame-simple text-amber-600 mt-1 shrink-0 text-sm"></i>
+                  <span><strong>Sin red de gas natural</strong>: la cocina y el agua caliente funcionan con sistema de <strong>gas envasado / tubo</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-bolt text-emerald-600 mt-1 shrink-0 text-sm"></i>
+                  <span><strong>Suministros activos</strong>: energía eléctrica y agua provistas y en óptimo funcionamiento para el uso diario.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-stone-100 text-xs font-semibold text-stone-500">
+              Instalaciones listas para habitar
+            </div>
+          </div>
+
+          <!-- Bloque 3: 📋 Requisitos y reglas claras -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E3D9] shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 pb-4 border-b border-stone-100">
+                <span class="text-2xl" role="img" aria-label="Reglas">📋</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900 leading-tight">
+                  Requisitos y reglas claras
+                </h3>
+              </div>
+              
+              <ul class="space-y-3.5 text-stone-700 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-file-invoice-dollar text-[#1B4332] mt-1 shrink-0 text-sm"></i>
+                  <span>Se solicita <strong>demostración de ingresos y garantías</strong> (garantías laborales o propietaria en Córdoba).</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-ban text-rose-600 mt-1 shrink-0 text-sm"></i>
+                  <span>Uso exclusivo residencial o trabajo tranquilo: <strong>estrictamente prohibido eventos o fiestas</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-scissors text-[#1B4332] mt-1 shrink-0 text-sm"></i>
+                  <span>El <strong>mantenimiento del parque queda a cargo del inquilino</strong> (corte de césped y cuidado regular).</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-paw text-[#1B4332] mt-1 shrink-0 text-sm"></i>
+                  <span>Se aceptan <strong>mascotas responsables</strong> bajo adecuada tenencia y cuidado del inmueble.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-stone-100 text-xs font-semibold text-stone-500">
+              Alquiler permanente tradicional
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Call to Action (CTA) Destacado para leads calificados -->
+        <div class="mt-12 sm:mt-16 text-center">
+          <div class="inline-block p-1 rounded-3xl bg-gradient-to-r from-[#25D366]/40 via-[#1B4332]/20 to-[#25D366]/40 shadow-xl max-w-2xl w-full">
+            <div class="bg-white rounded-[22px] p-6 sm:p-8 space-y-4">
+              <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1B4332]">
+                <i class="fa-solid fa-calendar-check text-[#25D366] text-sm"></i>
+                <span>Visitas para Leads Calificados</span>
+              </div>
+              <p class="text-stone-700 text-sm sm:text-base font-medium">
+                ¿Cumplís con los requisitos y buscás este nivel de tranquilidad?
+              </p>
+              <div>
+                <a href="https://wa.me/5493512042270?text=Hola!%20Le%C3%AD%20las%20condiciones%20de%20la%20casa%20en%20Falda%20del%20Ca%C3%B1ete%20en%20la%20web%2C%20cumplo%20con%20los%20requisitos%20y%20me%20gustar%C3%ADa%20coordinar%20una%20visita."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 sm:py-5 rounded-2xl text-base sm:text-lg font-extrabold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 active:translate-y-0">
+                  <i class="fa-brands fa-whatsapp text-2xl"></i>
+                  <span>Cumplo con las condiciones, ¡quiero coordinar una visita!</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -1057,15 +1287,14 @@
         </p>
 
         <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://wa.me/5493510000000?text=Hola!%20Quiero%20coordinar%20una%20visita%20para%20conocer%20la%20casa%20en%20Falda%20del%20Cañete."
-             target="_blank"
-             rel="noopener noreferrer"
-             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+          <button type="button" 
+                  onclick="openAgendaVisitaModal()"
+                  class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 cursor-pointer">
             <i class="fa-brands fa-whatsapp text-2xl"></i>
-            <span>Coordinar Visita por WhatsApp</span>
-          </a>
+            <span>Agenda tu visita</span>
+          </button>
 
-          <a href="tel:+5493510000000" 
+          <a href="tel:+5493512042270" 
              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all">
             <i class="fa-solid fa-phone"></i>
             <span>Llamar Directamente</span>
@@ -1076,7 +1305,8 @@
           <p>© Falda del Cañete, Córdoba, Argentina · Propiedad en Alquiler Permanente.</p>
           <div class="flex items-center gap-4 text-stone-300">
             <span><i class="fa-solid fa-location-dot text-[#25D366] mr-1"></i> Ruta Provincial C45</span>
-            <span><i class="fa-solid fa-shield text-[#25D366] mr-1"></i> Seguridad 24 hs</span>
+            <span><i class="fa-solid fa-tree text-[#25D366] mr-1"></i> Cuidador del parque</span>
+            <span><i class="fa-solid fa-lock text-[#25D366] mr-1"></i> Perímetro cerrado</span>
           </div>
         </div>
 
@@ -1086,30 +1316,159 @@
 
   <!-- ==================== BOTÓN FLOTANTE DE WHATSAPP ==================== -->
   <aside aria-label="Contacto rápido por WhatsApp" class="fixed bottom-6 right-6 z-40">
-    <a href="https://wa.me/5493510000000?text=Hola!%20Quisiera%20consultar%20por%20el%20alquiler%20permanente%20de%20la%20casa%20en%20Falda%20del%20Cañete." 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Abrir chat de WhatsApp"
-       class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-xl hover:bg-[#1EBE5D] hover:scale-110 active:scale-95 transition-all">
+    <button type="button" 
+            onclick="openAgendaVisitaModal()" 
+            aria-label="Abrir agenda de visita por WhatsApp" 
+            class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-xl hover:bg-[#1EBE5D] hover:scale-110 active:scale-95 transition-all cursor-pointer">
       <i class="fa-brands fa-whatsapp text-3xl"></i>
       <!-- Tooltip en hover -->
       <span class="hidden sm:block absolute right-16 px-3 py-1.5 rounded-lg bg-stone-900 text-white text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">
-        ¿Consultas? Escribinos por WhatsApp
+        Agenda tu visita por WhatsApp
       </span>
-    </a>
+    </button>
   </aside>
 
-  <!-- ==================== MODAL LIGHTBOX PARA GALERÍA DE FOTOS ==================== -->
-  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4">
+  <!-- ==================== MODAL LIGHTBOX PARA GALERÍA DE FOTOS (CON DESLIZAMIENTO) ==================== -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-2 sm:p-6 select-none" role="dialog" aria-modal="true" aria-label="Visualizador ampliado de fotos">
+    
+    <!-- Barra superior flotante -->
+    <div class="absolute top-4 left-4 right-4 flex items-center justify-between z-40 pointer-events-none">
+      <span id="lightboxCounter" class="pointer-events-auto px-3.5 py-1.5 rounded-full bg-white/20 text-white text-xs font-bold backdrop-blur-md border border-white/20">
+        Foto 1 de 8
+      </span>
+      <button type="button" 
+              onclick="closeLightbox()" 
+              aria-label="Cerrar vista previa" 
+              class="pointer-events-auto w-11 h-11 rounded-full bg-white/20 text-white hover:bg-white/40 flex items-center justify-center text-xl transition-all shadow-lg cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Flecha izquierda / anterior en lightbox -->
     <button type="button" 
-            onclick="closeLightbox()" 
-            aria-label="Cerrar vista previa" 
-            class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/20 text-white hover:bg-white/40 flex items-center justify-center text-xl transition-all z-10">
-      <i class="fa-solid fa-xmark"></i>
+            id="lightboxPrevBtn"
+            onclick="prevLightboxSlide()" 
+            aria-label="Foto anterior" 
+            class="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black/60 hover:bg-black/90 text-white border border-white/20 flex items-center justify-center text-lg sm:text-xl transition-all z-40 shadow-2xl backdrop-blur-sm cursor-pointer">
+      <i class="fa-solid fa-chevron-left"></i>
     </button>
-    <div class="max-w-5xl w-full flex flex-col items-center">
-      <img id="lightboxImage" src="" alt="Foto ampliada de la propiedad" class="max-h-[80vh] w-auto max-w-full rounded-xl object-contain shadow-2xl border border-white/20" />
-      <p id="lightboxCaption" class="mt-4 text-white text-center text-sm font-medium px-4"></p>
+
+    <!-- Flecha derecha / siguiente en lightbox -->
+    <button type="button" 
+            id="lightboxNextBtn"
+            onclick="nextLightboxSlide()" 
+            aria-label="Foto siguiente" 
+            class="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-black/60 hover:bg-black/90 text-white border border-white/20 flex items-center justify-center text-lg sm:text-xl transition-all z-40 shadow-2xl backdrop-blur-sm cursor-pointer">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Contenedor central de la foto y texto -->
+    <div class="max-w-5xl w-full flex flex-col items-center justify-center relative z-30 px-2 sm:px-12 py-10" id="lightboxContentArea">
+      <div class="relative overflow-hidden rounded-2xl flex items-center justify-center max-h-[75vh] w-auto">
+        <img id="lightboxImage" 
+             src="" 
+             alt="Foto ampliada de la propiedad" 
+             class="max-h-[75vh] w-auto max-w-full rounded-2xl object-contain shadow-2xl border border-white/20 transition-opacity duration-200" />
+      </div>
+      <p id="lightboxCaption" class="mt-4 text-white text-center text-sm sm:text-base font-medium px-4 max-w-2xl text-balance drop-shadow"></p>
+      <div class="mt-2 text-stone-400 text-xs flex items-center gap-2 sm:hidden">
+        <i class="fa-solid fa-arrows-left-right text-stone-400"></i> Deslizá a los costados para ver más
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL DE CONFIRMACIÓN: AGENDÁ TU VISITA ==================== -->
+  <div id="agendaVisitaModal" class="fixed inset-0 z-50 hidden bg-stone-900/80 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modalAgendaTitle">
+    <div class="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-[#E8E3D9] overflow-hidden my-8 animate-in fade-in zoom-in-95 duration-200" id="agendaModalCard">
+      
+      <!-- Botón cerrar modal -->
+      <button type="button" 
+              onclick="closeAgendaVisitaModal()" 
+              aria-label="Cerrar ventana" 
+              class="absolute top-4 right-4 w-9 h-9 rounded-full bg-stone-100 text-stone-500 hover:bg-stone-200 hover:text-stone-800 flex items-center justify-center text-base transition-colors z-10 cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Encabezado amigable y cálido -->
+      <div class="bg-gradient-to-br from-[#1B4332] to-[#2D4A3E] text-white p-6 sm:p-7 relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-8 w-36 h-36 rounded-full bg-[#25D366]/15 blur-xl pointer-events-none"></div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 text-emerald-300 text-xs font-bold tracking-wide mb-2.5">
+          <span>👋</span>
+          <span>¡Hola! Un detalle antes de escribirnos</span>
+        </div>
+        <h3 id="modalAgendaTitle" class="text-xl sm:text-2xl font-extrabold text-white leading-snug">
+          ¿Viste bien la ubicación y si el lugar encaja con vos?
+        </h3>
+        <p class="text-stone-200 text-xs sm:text-sm mt-1.5 leading-relaxed">
+          Queremos ser 100% transparentes para que no pierdas tiempo y tengas la certeza de que esta casa es justo lo que estás buscando:
+        </p>
+      </div>
+
+      <!-- Checklist amigable en tarjetas suaves -->
+      <div class="p-6 sm:p-7 space-y-3.5">
+        
+        <!-- Punto 1: Movilidad -->
+        <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#F8F7F4] border border-[#E8E3D9] hover:border-stone-300 transition-colors">
+          <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 text-lg border border-emerald-100">
+            🚗
+          </div>
+          <div class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+            <strong class="text-stone-900 block font-bold text-sm mb-0.5">Movilidad y transporte</strong>
+            La casa está sobre Ruta C45 (km 11). Contás con una <strong>parada de colectivo a solo 400 metros</strong> sobre la ruta, aunque tener <strong>vehículo propio (auto o moto)</strong> es súper recomendable para moverte con total libertad y comodidad en el día a día.
+          </div>
+        </div>
+
+        <!-- Punto 2: Servicios -->
+        <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#F8F7F4] border border-[#E8E3D9] hover:border-stone-300 transition-colors">
+          <div class="w-10 h-10 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center shrink-0 text-lg border border-amber-100">
+            🛠️
+          </div>
+          <div class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+            <strong class="text-stone-900 block font-bold text-sm mb-0.5">Servicios e internet</strong>
+            Viene <strong>sin Wi-Fi incluido</strong> (la contratación del servicio satelital o por aire corre por tu cuenta) y la cocina/termotanque funcionan con <strong>gas envasado / tubo</strong> (no hay red de gas natural).
+          </div>
+        </div>
+
+        <!-- Punto 3: Convivencia -->
+        <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#F8F7F4] border border-[#E8E3D9] hover:border-stone-300 transition-colors">
+          <div class="w-10 h-10 rounded-2xl bg-teal-50 text-[#1B4332] flex items-center justify-center shrink-0 text-lg border border-teal-100">
+            🌿
+          </div>
+          <div class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+            <strong class="text-stone-900 block font-bold text-sm mb-0.5">Paz total, parque y requisitos</strong>
+            Buscamos un perfil que valore el silencio: es solo para vivir o trabajar en calma (<strong>estrictamente prohibido fiestas o eventos</strong>). El cuidado del parque queda a cargo del inquilino y se piden garantías tradicionales.
+          </div>
+        </div>
+
+        <!-- Botones de Acción amigables -->
+        <div class="pt-2 space-y-2.5">
+          <a href="https://wa.me/5493512042270?text=Hola!%20Revis%C3%A9%20la%20ubicaci%C3%B3n%2C%20los%20servicios%20y%20las%20condiciones%20de%20la%20casa%20en%20Falda%20del%20Ca%C3%B1ete.%20Cumplo%20con%20los%20requisitos%20y%20me%20gustar%C3%ADa%20agendar%20una%20visita." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             onclick="closeAgendaVisitaModal()"
+             class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl text-sm sm:text-base font-extrabold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span>¡Sí, es justo lo que busco! Agendar visita</span>
+          </a>
+
+          <div class="grid grid-cols-2 gap-2 pt-1">
+            <button type="button" 
+                    onclick="scrollToSectionAndClose('ubicacion')" 
+                    class="text-xs font-semibold text-stone-600 hover:text-[#1B4332] py-2.5 px-3 rounded-xl bg-stone-100 hover:bg-stone-200 transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-map-location-dot text-[#2D6A4F]"></i>
+              <span>Mirar mapa primero</span>
+            </button>
+            <button type="button" 
+                    onclick="scrollToSectionAndClose('faq')" 
+                    class="text-xs font-semibold text-stone-600 hover:text-[#1B4332] py-2.5 px-3 rounded-xl bg-stone-100 hover:bg-stone-200 transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-circle-question text-[#2D6A4F]"></i>
+              <span>Repasar condiciones</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
@@ -1273,13 +1632,10 @@
     }
 
     function openCurrentSlideLightbox() {
-      const current = carouselSlidesData[currentCarouselIndex];
-      if (current) {
-        openLightbox(current.src, current.caption);
-      }
+      openLightbox(currentCarouselIndex);
     }
 
-    // Soporte para gestos táctiles (Swipe en celulares)
+    // Soporte para gestos táctiles en el carrusel de la página (Swipe en celulares)
     const carouselContainer = document.getElementById('carouselContainer');
     if (carouselContainer) {
       let touchStartX = 0;
@@ -1302,26 +1658,43 @@
       }, { passive: true });
     }
 
-    // Navegación con teclado (Flechas izquierda y derecha)
-    document.addEventListener('keydown', (e) => {
-      // Solo actuar si el lightbox modal está cerrado
-      if (lightboxModal && !lightboxModal.classList.contains('hidden')) return;
-      if (e.key === 'ArrowRight') {
-        nextCarouselSlide();
-      } else if (e.key === 'ArrowLeft') {
-        prevCarouselSlide();
-      }
-    });
-
-    // 5. Modal Lightbox para visualización ampliada de imágenes
+    // 5. Modal Lightbox para visualización ampliada con opción de deslizar a los costados
+    let currentLightboxIndex = 0;
     const lightboxModal = document.getElementById('lightboxModal');
     const lightboxImage = document.getElementById('lightboxImage');
     const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxCounter = document.getElementById('lightboxCounter');
 
-    function openLightbox(src, caption) {
-      if (lightboxModal && lightboxImage && lightboxCaption) {
-        lightboxImage.src = src;
-        lightboxCaption.textContent = caption || '';
+    function updateLightboxView() {
+      const slide = carouselSlidesData[currentLightboxIndex];
+      if (!slide || !lightboxImage) return;
+
+      lightboxImage.style.opacity = '0.3';
+      lightboxImage.src = slide.src;
+      lightboxImage.onload = () => {
+        lightboxImage.style.opacity = '1';
+      };
+
+      if (lightboxCaption) {
+        lightboxCaption.textContent = slide.caption || '';
+      }
+      if (lightboxCounter) {
+        lightboxCounter.textContent = `Foto ${currentLightboxIndex + 1} de ${totalCarouselSlides}`;
+      }
+
+      // Sincronizar también el carrusel principal de fondo
+      currentCarouselIndex = currentLightboxIndex;
+      updateCarouselView();
+    }
+
+    function openLightbox(index) {
+      if (typeof index === 'number' && index >= 0 && index < totalCarouselSlides) {
+        currentLightboxIndex = index;
+      } else {
+        currentLightboxIndex = currentCarouselIndex;
+      }
+      updateLightboxView();
+      if (lightboxModal) {
         lightboxModal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
       }
@@ -1334,20 +1707,121 @@
       }
     }
 
+    function nextLightboxSlide() {
+      currentLightboxIndex = (currentLightboxIndex + 1) % totalCarouselSlides;
+      updateLightboxView();
+    }
+
+    function prevLightboxSlide() {
+      currentLightboxIndex = (currentLightboxIndex - 1 + totalCarouselSlides) % totalCarouselSlides;
+      updateLightboxView();
+    }
+
+    // Deslizar con gestos táctiles (Swipe izquierda / derecha) dentro de la imagen ampliada
     if (lightboxModal) {
-      lightboxModal.addEventListener('click', function(e) {
-        if (e.target === lightboxModal) {
-          closeLightbox();
+      let lbTouchStartX = 0;
+      let lbTouchEndX = 0;
+      let lbTouchStartY = 0;
+      let lbTouchEndY = 0;
+
+      lightboxModal.addEventListener('touchstart', (e) => {
+        lbTouchStartX = e.changedTouches[0].screenX;
+        lbTouchStartY = e.changedTouches[0].screenY;
+      }, { passive: true });
+
+      lightboxModal.addEventListener('touchend', (e) => {
+        lbTouchEndX = e.changedTouches[0].screenX;
+        lbTouchEndY = e.changedTouches[0].screenY;
+        const diffX = lbTouchStartX - lbTouchEndX;
+        const diffY = lbTouchStartY - lbTouchEndY;
+        // Solo deslizar si el movimiento horizontal supera al vertical y supera el umbral
+        if (Math.abs(diffX) > 35 && Math.abs(diffX) > Math.abs(diffY)) {
+          if (diffX > 0) {
+            nextLightboxSlide();
+          } else {
+            prevLightboxSlide();
+          }
         }
-      });
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
+      }, { passive: true });
+
+      lightboxModal.addEventListener('click', function(e) {
+        if (e.target === lightboxModal || e.target.id === 'lightboxContentArea') {
           closeLightbox();
         }
       });
     }
 
-    // 6. Copiar coordenadas / dirección al portapapeles
+    // 6. Modal de Confirmación: "¿Viste la ubicación y si el lugar es para vos?"
+    const agendaVisitaModal = document.getElementById('agendaVisitaModal');
+
+    function openAgendaVisitaModal() {
+      if (agendaVisitaModal) {
+        agendaVisitaModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        if (menuIcon) {
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        }
+      }
+    }
+
+    function closeAgendaVisitaModal() {
+      if (agendaVisitaModal) {
+        agendaVisitaModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function scrollToSectionAndClose(sectionId) {
+      closeAgendaVisitaModal();
+      setTimeout(() => {
+        const target = document.getElementById(sectionId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+
+    if (agendaVisitaModal) {
+      agendaVisitaModal.addEventListener('click', function(e) {
+        if (e.target === agendaVisitaModal) {
+          closeAgendaVisitaModal();
+        }
+      });
+    }
+
+    // Navegación universal con teclado (Flechas y Escape)
+    document.addEventListener('keydown', (e) => {
+      // Modal de agenda de visita
+      if (agendaVisitaModal && !agendaVisitaModal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeAgendaVisitaModal();
+        return;
+      }
+
+      // Modal de lightbox ampliado
+      if (lightboxModal && !lightboxModal.classList.contains('hidden')) {
+        if (e.key === 'ArrowRight') {
+          nextLightboxSlide();
+        } else if (e.key === 'ArrowLeft') {
+          prevLightboxSlide();
+        } else if (e.key === 'Escape') {
+          closeLightbox();
+        }
+        return;
+      }
+
+      // Carrusel de la página
+      if (e.key === 'ArrowRight') {
+        nextCarouselSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevCarouselSlide();
+      }
+    });
+
+    // 7. Copiar coordenadas / dirección al portapapeles
     function copyAddress() {
       const address = "-31.552751, -64.456820";
       navigator.clipboard.writeText(address).then(() => {
