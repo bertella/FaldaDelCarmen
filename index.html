@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -100,22 +100,22 @@
   }
   </script>
 </head>
-<body class="bg-[#F8F7F4] text-slate-800 antialiased selection:bg-[#2D4A3E] selection:text-white">
+<body class="bg-[#F8F7F4] text-slate-800 antialiased selection:bg-[#2D4A3E] selection:text-white overflow-x-hidden">
 
   <!-- ==================== 1. NAVBAR / HEADER ==================== -->
   <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#F8F7F4]/90 backdrop-blur-md border-b border-[#E8E3D9]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
+    <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4 md:gap-8">
       
       <!-- Zona 1: Brand Wordmark -->
       <a href="#" class="flex items-center gap-2 group whitespace-nowrap shrink-0 text-decoration-none">
-        <span class="w-10 h-10 rounded-xl bg-[#2D4A3E] text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-          <i class="fa-solid fa-mountain-sun text-lg"></i>
+        <span class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#2D4A3E] text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-mountain-sun text-sm sm:text-lg"></i>
         </span>
         <div class="flex flex-col">
-          <span class="text-base sm:text-lg font-bold text-[#1B4332] tracking-tight leading-tight">
+          <span class="text-sm sm:text-base md:text-lg font-bold text-[#1B4332] tracking-tight leading-tight">
             Falda del Cañete
           </span>
-          <span class="text-[11px] font-medium text-stone-500 uppercase tracking-wider">
+          <span class="text-[9px] sm:text-[11px] font-medium text-stone-500 uppercase tracking-wider">
             Alquiler Permanente
           </span>
         </div>
@@ -132,17 +132,18 @@
       </nav>
 
       <!-- Zona 3: CTA Principal Agenda tu Visita & Botón Móvil -->
-      <div class="flex items-center gap-3 shrink-0">
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <!-- Botón completo en pantallas medianas y grandes -->
         <button type="button" 
                 onclick="openAgendaVisitaModal()" 
-                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-[#1B4332] hover:bg-[#2D4A3E] shadow-sm hover:shadow-md transition-all whitespace-nowrap cursor-pointer">
-          <i class="fa-brands fa-whatsapp text-base text-[#25D366]"></i>
-          <span>Agenda tu visita</span>
+                class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-[#1B4332] hover:bg-[#2D4A3E] shadow-sm hover:shadow-md transition-all whitespace-nowrap cursor-pointer">
+          <i class="fa-brands fa-whatsapp text-sm sm:text-base text-[#25D366]"></i>
+          <span>Agendar una visita</span>
         </button>
 
         <!-- Botón menú hamburguesa móvil -->
-        <button id="mobileMenuBtn" type="button" aria-label="Abrir menú" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-200/60 focus:outline-none">
-          <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+        <button id="mobileMenuBtn" type="button" aria-label="Abrir menú" class="md:hidden w-9 h-9 rounded-xl bg-stone-100 text-stone-700 hover:bg-stone-200 flex items-center justify-center transition-colors focus:outline-none">
+          <i id="menuIcon" class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
     </div>
@@ -172,20 +173,20 @@
                 onclick="openAgendaVisitaModal()" 
                 class="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow text-sm cursor-pointer">
           <i class="fa-brands fa-whatsapp text-lg"></i>
-          <span>Agenda tu visita</span>
+          <span>Agendar una visita</span>
         </button>
       </div>
     </div>
   </header>
 
-  <main class="pt-20">
+  <main class="pt-16 sm:pt-20">
     <!-- ==================== 2. HERO SECTION ==================== -->
-    <section class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24">
+    <section class="relative overflow-hidden pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-16 lg:pb-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
           
           <!-- Columna Izquierda: Copywriting & CTAs -->
-          <div class="lg:col-span-7 space-y-6">
+          <div class="lg:col-span-7 space-y-5 sm:space-y-6">
             
             <!-- Badge / Tag flotante limpio -->
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E8E3D9] text-[#1B4332] text-xs sm:text-sm font-semibold tracking-wide">
@@ -202,7 +203,6 @@
             <p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl">
               Viví rodeado de sierras y tranquilidad a solo <strong class="text-stone-800 font-semibold">15 minutos de Carlos Paz</strong> y <strong class="text-stone-800 font-semibold">25 de Córdoba Capital</strong>. Una propiedad exclusiva dentro de un entorno natural único sobre Ruta C45.
             </p>
-
           </div>
 
           <!-- Columna Derecha: Imagen Hero Destacada con Vista a la Pileta y Parque -->
@@ -210,21 +210,21 @@
             <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
               <img src="/assets/aistudio/IMG-20251202-WA0006_a118f2db.jpg" 
                    alt="Pileta propia, lavandas y parque verde en la casa de Falda del Cañete" 
-                   class="w-full h-[420px] sm:h-[480px] object-cover object-center group-hover:scale-105 transition-transform duration-700" 
+                   class="w-full h-[320px] sm:h-[420px] lg:h-[480px] object-cover object-center group-hover:scale-105 transition-transform duration-700" 
                    loading="eager" />
               
-              <!-- Gradiente de lectura -->
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <!-- Gradiente de lectura (solo en desktop) -->
+              <div class="hidden sm:block absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               
-              <!-- Card flotante sobre imagen -->
-              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-stone-200/80">
+              <!-- Card flotante sobre imagen (ocultada en mobile para que no sea invasiva) -->
+              <div class="hidden sm:block absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-stone-200/80">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center gap-3">
                     <span class="w-9 h-9 rounded-full bg-[#2D4A3E] text-white flex items-center justify-center text-sm">
                       <i class="fa-solid fa-water-ladder"></i>
                     </span>
                     <div>
-                      <h2 class="text-sm font-bold text-stone-900 leading-tight">Pileta & Gran Parque </h2>
+                      <h2 class="text-sm font-bold text-stone-900 leading-tight">Pileta & Gran Parque</h2>
                       <p class="text-xs text-stone-500">Agua cristalina y lavandas serranas</p>
                     </div>
                   </div>
@@ -299,53 +299,51 @@
                    alt="Gran parque verde con pileta y lavandas frente a la casa" 
                    class="w-full h-full object-cover" 
                    loading="eager" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-[#25D366]/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-emerald-500/30">
-                    Exterior · Parque & Casa
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Gran Parque Verde de 5.500 m² & Casa
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Parque propio con lavandas, vegetación autóctona, pileta y vista abierta a la propiedad
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-emerald-500/30 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Exterior</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Gran Parque Verde & Casa
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Lote de 5.500 m² con lavandas, vegetación autóctona y vista abierta
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
 
             <!-- Slide 2: Pileta & Solárium (Foto 2) -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
-              <!-- Fondo difuminado ambiental para rellenar armónicamente el ancho panorámico -->
               <img src="/assets/aistudio/IMG-20240929-WA0012_1__60ab0e7f.jpg" 
                    alt="" 
                    aria-hidden="true" 
                    class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
               
-              <!-- Imagen completa de la pileta sin cortes ni zoom excesivo -->
               <img src="/assets/aistudio/IMG-20240929-WA0012_1__60ab0e7f.jpg" 
                    alt="Pileta propia con agua cristalina y solárium con vista a las sierras" 
                    class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
                    loading="lazy" />
-              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
-                <div class="max-w-2xl pointer-events-auto">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-[#25D366]/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-emerald-500/30">
-                    Exterior · Pileta
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Pileta & Solárium con Vista a las Sierras
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Vista completa: agua cristalina, solárium atérmico, lavandas en flor y sierras cordobesas
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-emerald-500/30 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Exterior</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Pileta & Solárium
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Agua cristalina, solárium atérmico, lavandas y vista a las sierras
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
@@ -356,53 +354,51 @@
                    alt="Fachada con galería cubierta y asador" 
                    class="w-full h-full object-cover" 
                    loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-[#25D366]/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-emerald-500/30">
-                    Exterior
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Galería Techada & Asador
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Fachada de ladrillo visto con galería cubierta, asador criollo y chimenea
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-emerald-500/30 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Exterior</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Galería Cubierta & Asador
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Ladrillo visto, asador criollo y chimenea exterior
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
 
             <!-- Slide 4: Estufa Rusa a Leña con Horno -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
-              <!-- Fondo ambiental difuminado para formato panorámico -->
               <img src="/assets/aistudio/IMG-20230727-WA0009_83492d9d.jpg" 
                    alt="" 
                    aria-hidden="true" 
                    class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
               
-              <!-- Imagen completa de la estufa rusa con horno sin cortes -->
               <img src="/assets/aistudio/IMG-20230727-WA0009_83492d9d.jpg" 
-                   alt="Estufa rusa a leña de mampostería refractaria con horno integrado de alto rendimiento térmico" 
+                   alt="Estufa rusa a leña de mampostería refractaria con horno integrado" 
                    class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
                    loading="lazy" />
-              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
-                <div class="max-w-2xl pointer-events-auto">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-amber-500/40 text-amber-200 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-amber-400/40">
-                    Calefacción & Cocina · Living
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Estufa Rusa con Horno a Leña
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Estufa rusa de mampostería refractaria con horno integrado: alto rendimiento térmico para climatizar todo el hogar y cocinar a las brasas
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-amber-500/30 text-amber-200 text-[10px] font-bold uppercase tracking-wider">Living</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Estufa Rusa con Horno a Leña
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Mampostería refractaria: alto rendimiento térmico y cocción
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
@@ -413,21 +409,21 @@
                    alt="Living y comedor integrado con sillón y mesa amplia" 
                    class="w-full h-full object-cover" 
                    loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Interiores
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Living Comedor Integrado
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Living comedor espacioso con gran iluminación y pisos símil madera
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-stone-700/60 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Interiores</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Living Comedor Integrado
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Espacioso, con gran iluminación natural y pisos símil madera
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
@@ -438,53 +434,51 @@
                    alt="Cocina espaciosa equipada con muebles modernos" 
                    class="w-full h-full object-cover" 
                    loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Interiores
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Cocina Espaciosa Equipada
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Cocina moderna espaciosa con bajomesadas y mesada de granito
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-stone-700/60 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Interiores</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Cocina Equipada & Granito
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Muebles bajo mesada de diseño y vistas al jardín
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
 
             <!-- Slide 7: Desayunador con Vista al Parque -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
-              <!-- Fondo ambiental difuminado -->
               <img src="/assets/aistudio/IMG-20250523-WA0178_1__3f918347.jpg" 
                    alt="" 
                    aria-hidden="true" 
                    class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
               
-              <!-- Imagen completa del desayunador -->
               <img src="/assets/aistudio/IMG-20250523-WA0178_1__3f918347.jpg" 
                    alt="Desayunador con vista panorámica verde" 
                    class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
                    loading="lazy" />
-              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
-                <div class="max-w-2xl pointer-events-auto">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Interiores
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Desayunador con Vista al Parque
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Mesa alta desayunadora de madera maciza frente a ventanal con vista al verde
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-stone-700/60 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Interiores</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Desayunador Panorámico
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Mesa alta maciza frente a ventanal con vista al verde
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
@@ -495,21 +489,21 @@
                    alt="Habitación principal matrimonial con vista exterior" 
                    class="w-full h-full object-cover" 
                    loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Dormitorios
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Habitación Matrimonial Amplia
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Dormitorio principal amplio, luminoso y con cortinas blackout
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-stone-700/60 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Dormitorios</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Dormitorio Matrimonial Principal
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Luminoso, espacioso y equipado con cortinas blackout
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
@@ -520,53 +514,51 @@
                    alt="Habitación secundaria con placard y escritorio" 
                    class="w-full h-full object-cover" 
                    loading="lazy" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4">
-                <div class="max-w-2xl">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Dormitorios
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    Segunda Habitación / Home Office
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Segunda habitación con placard, cuchetas y espacio de estudio
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-stone-700/60 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Dormitorios</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      Segunda Habitación / Home Office
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Placard, cuchetas y espacio para escritorio de trabajo
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
 
             <!-- Slide 10: 2 Baños Completos -->
             <div class="carousel-slide min-w-full h-full relative cursor-pointer overflow-hidden flex items-center justify-center bg-stone-950" onclick="openCurrentSlideLightbox()">
-              <!-- Fondo ambiental difuminado -->
               <img src="/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg" 
                    alt="" 
                    aria-hidden="true" 
                    class="absolute inset-0 w-full h-full object-cover blur-2xl scale-125 opacity-35 brightness-75 pointer-events-none" />
               
-              <!-- Imagen completa del baño -->
               <img src="/assets/aistudio/IMG-20250523-WA0163_2__73db97f4.jpg" 
                    alt="Baño completo moderno con espejo y vanitory" 
                    class="relative z-10 w-auto h-full max-w-full object-contain mx-auto drop-shadow-2xl" 
                    loading="lazy" />
-              <div class="absolute inset-0 z-20 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
-              <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 text-white flex items-end justify-between gap-4 z-30 pointer-events-none">
-                <div class="max-w-2xl pointer-events-auto">
-                  <span class="inline-block px-2.5 py-1 rounded-md bg-stone-700/60 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-2 backdrop-blur-sm border border-stone-500/30">
-                    Baños
-                  </span>
-                  <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                    2 Baños Completos
-                  </h3>
-                  <p class="text-xs sm:text-sm text-stone-200 mt-1.5 leading-relaxed">
-                    Baño completo con antebaño moderno y ducha
+              <div class="absolute bottom-0 inset-x-0 h-20 sm:h-24 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none z-20"></div>
+              <div class="absolute bottom-2.5 left-3 right-3 sm:bottom-3.5 sm:left-5 sm:right-5 text-white flex items-center justify-between gap-3 z-30 pointer-events-none">
+                <div class="max-w-xl pointer-events-auto">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block px-1.5 py-0.5 rounded bg-stone-700/60 text-emerald-300 text-[10px] font-bold uppercase tracking-wider">Baños</span>
+                    <h3 class="text-sm sm:text-base font-bold text-white tracking-tight drop-shadow leading-tight">
+                      2 Baños Completos
+                    </h3>
+                  </div>
+                  <p class="text-[11px] sm:text-xs text-stone-200/90 mt-0.5 line-clamp-1 drop-shadow">
+                    Antebaño independiente, grifería moderna y ducha
                   </p>
                 </div>
-                <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/20 backdrop-blur-md text-white text-xs font-semibold hover:bg-white/30 shrink-0 pointer-events-auto">
-                  <i class="fa-solid fa-expand"></i> Ampliar
+                <span class="hidden sm:inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white/90 text-[11px] font-medium border border-white/20 shrink-0 pointer-events-auto transition-colors">
+                  <i class="fa-solid fa-expand text-[10px]"></i> Ampliar
                 </span>
               </div>
             </div>
@@ -664,17 +656,6 @@
               <div class="text-sm sm:text-base font-bold text-stone-900">Lote de 5.500 m²</div>
             </div>
           </div>
-        </div>
-
-        <!-- Botón para ver más en WhatsApp o abrir lightbox -->
-        <div class="mt-8 text-center">
-          <a href="https://wa.me/5493512042270?text=Hola!%20Me%20gustar%C3%ADa%20ver%20m%C3%A1s%20fotos%20y%20videos%20de%20la%20casa%20en%20Falda%20del%20Ca%C3%B1ete." 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="inline-flex items-center gap-2 text-sm font-semibold text-[#1B4332] hover:text-[#2D6A4F] underline underline-offset-4 decoration-stone-300">
-            <i class="fa-solid fa-camera"></i>
-            <span>¿Querés ver más fotos y videos en alta definición? Pedilos por WhatsApp</span>
-          </a>
         </div>
 
       </div>
@@ -900,16 +881,6 @@
                     <p class="text-sm text-stone-300">Ingreso exclusivo para residentes con portón de acceso y perímetro resguardado.</p>
                   </div>
                 </div>
-              </div>
-
-              <div class="pt-4">
-                <a href="https://wa.me/5493512042270?text=Hola!%20Quisiera%20m%C3%A1s%20detalles%20sobre%20el%20predio%20en%20Falda%20del%20Ca%C3%B1ete." 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-sm shadow-md transition-all">
-                  <i class="fa-brands fa-whatsapp text-lg"></i>
-                  <span>Consultar por el Predio & Visitas</span>
-                </a>
               </div>
             </div>
 
@@ -1171,33 +1142,13 @@
 
         </div>
 
-        <!-- Banner / CTA de Asesoramiento de Requisitos -->
-        <div class="mt-10 sm:mt-12 rounded-2xl bg-[#1B4332] text-white p-6 sm:p-8 md:p-10 shadow-lg relative overflow-hidden">
-          <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-[#25D366]/10 blur-2xl pointer-events-none"></div>
-          
-          <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div class="max-w-2xl space-y-2">
-              <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-                <i class="fa-solid fa-comments"></i>
-                <span>Asesoramiento Personalizado</span>
-              </div>
-              <h3 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
-                ¿Tenés dudas sobre los requisitos?
-              </h3>
-              <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
-                Contactanos y te asesoramos para que puedas preparar tu documentación antes de iniciar el trámite.
-              </p>
-            </div>
-
-            <div class="shrink-0">
-              <a href="https://wa.me/5493512042270?text=Hola!%20Tengo%20dudas%20sobre%20los%20requisitos%20para%20alquilar%20la%20casa%20en%20Falda%20del%20Cañete."
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl text-sm sm:text-base font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
-                <i class="fa-brands fa-whatsapp text-xl"></i>
-                <span>Consultar Requisitos por WhatsApp</span>
-              </a>
-            </div>
+        <!-- Nota informativa sobre requisitos (sin botón redundante) -->
+        <div class="mt-8 rounded-2xl bg-[#1B4332]/5 border border-[#1B4332]/15 p-5 sm:p-6 flex items-center gap-4 text-stone-700">
+          <div class="w-10 h-10 rounded-xl bg-[#1B4332] text-white flex items-center justify-center shrink-0 text-base">
+            <i class="fa-solid fa-file-shield"></i>
+          </div>
+          <div class="text-xs sm:text-sm leading-relaxed">
+            <strong class="text-stone-900 font-bold">Documentación clara y transparente:</strong> Te asesoramos en cada paso con el contrato de alquiler permanente y la revisión de garantías previas al ingreso.
           </div>
         </div>
 
@@ -1351,65 +1302,52 @@
       </div>
     </section>
 
-    <!-- ==================== 9. FOOTER & CTA FINAL ==================== -->
-    <section class="py-16 lg:py-20 bg-[#1B4332] text-white relative overflow-hidden">
+    <!-- ==================== 9. FOOTER ==================== -->
+    <footer class="py-12 bg-[#1B4332] text-white relative overflow-hidden">
       <!-- Glow ambiental suave de fondo -->
-      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#25D366]/10 blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#3D5A4C]/30 blur-3xl pointer-events-none"></div>
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#25D366]/5 blur-3xl pointer-events-none"></div>
 
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-4">
         
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-emerald-300 text-xs font-semibold tracking-wide">
-          <i class="fa-solid fa-calendar-check"></i>
-          <span>Visitas Coordinadas con Cita Previa</span>
-        </div>
+        <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-white">
+          Casa en Falda del Cañete, Córdoba
+        </h3>
 
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-          ¿Te gustaría coordinar una visita?
-        </h2>
-
-        <p class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          Comunicate hoy mismo por WhatsApp para recibir información detallada del canon de alquiler, requisitos de ingreso y agendar un recorrido presencial en la propiedad.
+        <p class="text-stone-300 text-sm max-w-xl mx-auto leading-relaxed">
+          Alquiler residencial permanente en un entorno serrano único sobre Ruta C45.
         </p>
 
-        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button type="button" 
-                  onclick="openAgendaVisitaModal()"
-                  class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold text-white bg-[#25D366] hover:bg-[#1EBE5D] shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 cursor-pointer">
-            <i class="fa-brands fa-whatsapp text-2xl"></i>
-            <span>Agenda tu visita</span>
-          </button>
-
-          <a href="tel:+5493512042270" 
-             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all">
-            <i class="fa-solid fa-phone"></i>
-            <span>Llamar Directamente</span>
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-stone-300">
+          <a href="tel:+5493512042270" class="hover:text-white transition-colors flex items-center gap-1.5 font-medium">
+            <i class="fa-solid fa-phone text-[#25D366]"></i> +54 9 351 204-2270
           </a>
+          <span class="hidden sm:inline">•</span>
+          <span class="flex items-center gap-1.5">
+            <i class="fa-solid fa-location-dot text-[#25D366]"></i> Km 11 (cerca de la CONAE)
+          </span>
         </div>
 
-        <div class="pt-8 text-xs text-stone-400 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© Falda del Cañete, Córdoba, Argentina · Propiedad en Alquiler Permanente.</p>
-          <div class="flex items-center gap-4 text-stone-300">
-            <span><i class="fa-solid fa-location-dot text-[#25D366] mr-1"></i> Ruta Provincial C45</span>
+        <div class="pt-6 text-xs text-stone-400 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p>© Falda del Cañete, Córdoba, Argentina · Alquiler Permanente.</p>
+          <div class="flex items-center gap-4 text-stone-300 text-[11px]">
             <span><i class="fa-solid fa-tree text-[#25D366] mr-1"></i> Cuidador del parque</span>
             <span><i class="fa-solid fa-lock text-[#25D366] mr-1"></i> Perímetro cerrado</span>
           </div>
         </div>
 
       </div>
-    </section>
+    </footer>
   </main>
 
-  <!-- ==================== BOTÓN FLOTANTE DE WHATSAPP ==================== -->
-  <aside aria-label="Contacto rápido por WhatsApp" class="fixed bottom-6 right-6 z-40">
+  <!-- ==================== BOTÓN FLOTANTE DE WHATSAPP CON LEYENDA ==================== -->
+  <aside aria-label="Contacto rápido por WhatsApp" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40">
     <button type="button" 
             onclick="openAgendaVisitaModal()" 
-            aria-label="Abrir agenda de visita por WhatsApp" 
-            class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-xl hover:bg-[#1EBE5D] hover:scale-110 active:scale-95 transition-all cursor-pointer">
-      <i class="fa-brands fa-whatsapp text-3xl"></i>
-      <!-- Tooltip en hover -->
-      <span class="hidden sm:block absolute right-16 px-3 py-1.5 rounded-lg bg-stone-900 text-white text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">
-        Agenda tu visita por WhatsApp
+            aria-label="Agendar una visita por WhatsApp" 
+            class="group flex items-center gap-2.5 px-4 py-3 sm:px-5 sm:py-3.5 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-white shadow-2xl hover:shadow-emerald-500/30 hover:scale-105 active:scale-95 transition-all cursor-pointer border-2 border-white/50 ring-4 ring-black/5">
+      <i class="fa-brands fa-whatsapp text-2xl sm:text-2xl shrink-0"></i>
+      <span class="text-xs sm:text-sm font-extrabold tracking-tight whitespace-nowrap drop-shadow-sm">
+        Agendar una visita
       </span>
     </button>
   </aside>
